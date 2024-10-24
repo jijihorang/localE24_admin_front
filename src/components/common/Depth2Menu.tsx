@@ -7,10 +7,10 @@ function Depth2Menu({subMenus, basicPath}) {
         const fullPath = basicPath + menuName.toPath
         return (
             <li
-                className="px-2 py-1 transition-colors duration-150 hover:text-txt-grey rounded"
+                className="px-2 py-1 transition-colors duration-150 rounded"
                 key={idx}
             >
-                <Link className="w-full block" to={fullPath}>{menuName.name}</Link>
+                <Link className="w-full block text-blue-950" to={fullPath}>{menuName.name}</Link>
             </li>
         )
     })
