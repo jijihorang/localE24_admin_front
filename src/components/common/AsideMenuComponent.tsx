@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
-import React from "react";
 import Depth1Menu from "./Depth1Menu.tsx";
+
+import logo from "../../assets/img/logo.png"
 
 function AsideMenuComponent() {
 
@@ -45,8 +46,7 @@ function AsideMenuComponent() {
 
                 {/* 로고 부분 */}
                 <Link to="/main" className="flex items-center justify-center mb-8 p-2">
-                        <span
-                            className="text-2xl font-bold bg-yellow-400 text-white px-4 py-2 rounded-lg shadow-lg">Admin</span>
+                       <img src={logo} alt='/logo' />
                 </Link>
 
                 {/* 1Depth 메뉴 */}
