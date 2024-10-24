@@ -2,9 +2,6 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import AsideMenuComponent from "../components/common/AsideMenuComponent.tsx";
 
-import logo from '../assets/img/logo.png';
-
-
 // const Dashboard = () => (
 //     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 //         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
@@ -154,7 +151,6 @@ function BasicLayout({children}: { children: React.ReactNode }) {
                 <header className="z-10 py-4 bg-side-navy">
                     <div className="w-full flex justify-end px-6">
                         <Link to='/login'
-                              className="px-6 py-2 text-white rounded-full hover:bg-yellow-200 focus:outline-none hover:text-black focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition-colors duration-300">
                             className="px-6 py-2 text-white rounded-full bg-neutral-700 hover:bg-neutral-500 focus:outline-none hover:text-black focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50 transition-colors duration-300">
                             Login
                         </Link>
