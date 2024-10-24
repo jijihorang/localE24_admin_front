@@ -21,7 +21,7 @@ function Depth1Menu({mainName,subMenus,basicPath}) {
         <li className="relative px-6 py-3">
             <button
                 onClick={isToggleOpen}
-                className="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-yellow-500"
+                className="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-neutral-800"
             >
                 <span className="inline-flex items-center">
                     <span className="ml-4 text-blue-950">{mainName}</span>

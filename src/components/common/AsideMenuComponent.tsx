@@ -45,12 +45,12 @@ function AsideMenuComponent() {
             <div className="py-4 text-neutral-800">
 
                 {/* 로고 부분 */}
-                <Link to="/main" className="flex items-center justify-center mb-8 p-2">
-                       <img src={logo} alt='/logo' />
+                <Link to="/main" className="flex items-center justify-center mb-4 p-2">
+                       <img src={logo} alt='/logo' className='px-14'/>
                 </Link>
 
                 {/* 1Depth 메뉴 */}
-                <ul className="mt-6 space-y-2 text-white">
+                <ul className="mt-6 space-y-2 text-txt-grey">
                     <Depth1Menu {...m1}></Depth1Menu>
                     <Depth1Menu {...m2} ></Depth1Menu>
                     <Depth1Menu {...m3} ></Depth1Menu>
