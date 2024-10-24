@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         'side-navy': '#e9edf2',
-        'txt-grey' : '#1f2021'
+        'txt-grey' : '#1f2021',
+        'txt-cyan' : '#37ebe3'
       }
     },
   },

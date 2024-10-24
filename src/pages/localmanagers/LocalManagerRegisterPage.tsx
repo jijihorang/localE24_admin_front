@@ -1,7 +1,9 @@
 
 function LocalManagerRegisterPage() {
     return (
-        <div></div>
+        <>
+
+        </>
     );
 }
 
