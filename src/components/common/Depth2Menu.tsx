@@ -2,7 +2,6 @@ import {Link} from "react-router-dom";
 import React from "react";
 
 function Depth2Menu({subMenus, basicPath}) {
-    console.log(subMenus, basicPath);
     const menuLis = subMenus.map( (menuName,idx) => {
 
         const fullPath = basicPath + menuName.toPath
