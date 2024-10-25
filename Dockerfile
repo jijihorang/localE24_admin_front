@@ -44,5 +44,6 @@ COPY . .
 # 포트 설정
 EXPOSE 8080
 
+
 # 시작 명령어
 CMD ["npm", "run", "dev"]
