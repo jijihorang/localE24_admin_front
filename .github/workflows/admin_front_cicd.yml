@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # 원하는 Node.js 버전을 선택하세요
+          node-version: '20.16' # 원하는 Node.js 버전을 선택하세요
 
       - name: Install dependencies
         run: npm install
