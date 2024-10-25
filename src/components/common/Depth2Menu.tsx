@@ -1,7 +1,12 @@
 import {Link} from "react-router-dom";
-import React from "react";
 
-function Depth2Menu({subMenus, basicPath}) {
+// 타입에러 처리 - props 객체 기본 타입 지정
+interface Depth2MenuProps {
+    subMenus:[{name:string,toPath:string}],
+    basicPath:string,
+}
+
+function Depth2Menu({subMenus, basicPath}:Depth2MenuProps) {
     const menuLis = subMenus.map( (menuName,idx) => {
 
         const fullPath = basicPath + menuName.toPath
