@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import Depth2Menu from "./Depth2Menu.tsx";
 
 const ChevronDown = () => (

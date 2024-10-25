@@ -8,7 +8,7 @@ function AsideMenuComponent() {
     const m1 = {
         mainName:"지역 담당자 관리",
         subMenus:[{name:"지역 담당자 리스트",toPath:"/list"}],
-        basicPath:"/localManagers"
+        basicPath:"/localManagers",
     }
 
     const m2 = {
