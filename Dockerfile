@@ -1,6 +1,8 @@
 FROM node:20 AS build
 WORKDIR /app
 
+
+
 # package.json과 package-lock.json을 복사하고 의존성을 설치합니다.
 COPY package*.json ./
 RUN npm install
