@@ -7,13 +7,23 @@ const ChevronDown = () => (
     </svg>
 );
 
-function Depth1Menu({mainName,subMenus,basicPath}) {
+// 타입에러 처리 - props 객체 기본 타입 지정
+interface Depth1MenuProps {
+    mainName:string,
+    subMenus:[{name:string,toPath:string}],
+    basicPath:string,
+    iconName:string
+}
+
+function Depth1Menu({mainName,subMenus,basicPath,iconName}:Depth1MenuProps) {
 
     const [isToggle,setIsToggle] = useState(false)
 
     const isToggleOpen = () => {
         setIsToggle(!isToggle)
     }
+
+    const iconPath = `/src/assets/img/icons/${iconName}`
 
     const subMenuNames = {subMenus,basicPath}
 
@@ -23,6 +33,7 @@ function Depth1Menu({mainName,subMenus,basicPath}) {
                 onClick={isToggleOpen}
                 className="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-neutral-800"
             >
+                <img src={iconPath} alt="Arrow Icon" className="w-4 h-4"/>
                 <span className="inline-flex items-center">
                     <span className="ml-4 text-blue-950">{mainName}</span>
                 </span>
