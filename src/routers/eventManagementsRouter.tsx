@@ -17,11 +17,11 @@ const eventManagementsRouter = {
             element: <Navigate to="list" replace={true}></Navigate>
         },
         {
-            path: "list",
+            path: "/list",
             element: <Suspense fallback={Loading}><EventManagementListPage/></Suspense>
         },
         {
-            path: "read",
+            path: "/read",
             element: <Suspense fallback={Loading}><EventManagementReadPage/></Suspense>
         }
     ]

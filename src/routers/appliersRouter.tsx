@@ -16,14 +16,14 @@ const appliersRouter = {
     children: [
         {
             path: "",
-            element: <Navigate to="list" replace={true}></Navigate>
+            element: <Navigate to="/list" replace={true}></Navigate>
         },
         {
-            path: "list",
+            path: "/list",
             element: <Suspense fallback={Loading}><AppliersListPage /></Suspense>
         },
         {
-            path: "read",
+            path: "/read",
             element: <Suspense fallback={Loading}><AppliersReadPage /></Suspense>
         }
     ]

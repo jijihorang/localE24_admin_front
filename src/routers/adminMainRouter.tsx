@@ -20,7 +20,7 @@ const adminMainRouter = createBrowserRouter([
     },
     {
         path: "/",
-        element: <Navigate to="login" replace={true}></Navigate>
+        element: <Navigate to="/login" replace={true}></Navigate>
     },
     {
         path: "/login",
