@@ -14,14 +14,14 @@ const localManagersRouter = {
     children: [
         {
             path: "",
-            element: <Navigate to="/list" replace={true}/>
+            element: <Navigate to="list" replace={true}/>
         },
         {
-            path: "/list",
+            path: "list",
             element: <Suspense fallback={Loading}><LocalManagerListPage/></Suspense>
         },
         {
-            path: "/register",
+            path: "register",
             element: <Suspense fallback={Loading}><LocalManagerRegisterPage/></Suspense>
         }
     ]
