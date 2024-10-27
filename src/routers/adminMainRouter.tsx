@@ -19,7 +19,7 @@ const adminMainRouter = createBrowserRouter([
         element: <Suspense fallback={Loading}><AdminMainPage /></Suspense>
     },
     {
-        path: "/",
+        path: "",
         element: <Navigate to="/login" replace={true}></Navigate>
     },
     {

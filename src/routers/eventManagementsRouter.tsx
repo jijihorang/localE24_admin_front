@@ -14,7 +14,7 @@ const eventManagementsRouter = {
     children: [
         {
             path: "",
-            element: <Navigate to="list" replace={true}></Navigate>
+            element: <Navigate to="/list" replace={true}></Navigate>
         },
         {
             path: "/list",
