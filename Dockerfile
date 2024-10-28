@@ -1,16 +1,7 @@
-# Node.js 이미지 설정
-FROM node:20.16
-
-# 작업 디렉토리 설정
-WORKDIR /app
-
-# 의존성 설치를 위한 package.json 복사
-COPY package*.json ./
-
-# 의존성 설치
-RUN npm install
 FROM node:20 AS build
 WORKDIR /app
+
+
 
 # package.json과 package-lock.json을 복사하고 의존성을 설치합니다.
 COPY package*.json ./
@@ -38,11 +29,3 @@ EXPOSE 80
 
 # Nginx 시작 명령어
 CMD ["nginx", "-g", "daemon off;"]
-# 애플리케이션 코드 복사
-COPY . .
-
-# 포트 설정
-EXPOSE 8080
-
-# 시작 명령어
-CMD ["npm", "run", "dev"]
