@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 function EventManagementListComponent() {
     return (
@@ -26,7 +27,7 @@ function EventManagementListComponent() {
                         <tbody>
                         <tr>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부기와 함께하는 부산</p>
+                                <Link to="/eventManagements/read" className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부기와 함께하는 부산</Link>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">민파라다이스</p>

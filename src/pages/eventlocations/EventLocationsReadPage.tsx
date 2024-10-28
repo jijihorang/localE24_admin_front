@@ -1,7 +1,10 @@
+import EventLocationsReadComponent from "../../components/eventlocations/EventLocationsReadComponent.tsx";
 
 function EventLocationsReadPage() {
     return (
-        <div>Event Locations Read Page</div>
+        <div className="container mx-auto px-4 sm:px-8">
+            <EventLocationsReadComponent/>
+        </div>
     );
 }
 

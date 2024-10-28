@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 function EventLocationsListComponent() {
     return (
@@ -23,7 +24,7 @@ function EventLocationsListComponent() {
                         <tbody>
                         <tr>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부산 서면점</p>
+                                <Link to="/eventLocations/read" className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부산 서면점</Link>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-23</p>
