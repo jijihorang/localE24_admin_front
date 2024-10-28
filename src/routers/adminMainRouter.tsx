@@ -30,7 +30,6 @@ const adminMainRouter = createBrowserRouter([
     // eventManagementsRouter,
     // appliersRouter,
     // eventLocationsRouter
-
 ])
 
 export default adminMainRouter
