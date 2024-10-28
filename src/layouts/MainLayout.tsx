@@ -26,7 +26,7 @@ function BasicLayout({children}: { children: React.ReactNode }) {
 
 
     return (
-        <div className={`flex h-screen bg-gray-50`}>
+        <div className={`flex h-screen bg-gray-50 max-w-[120rem] m-auto`}>
             {/* Desktop sidebar */}
             <AsideMenuComponent></AsideMenuComponent>
 

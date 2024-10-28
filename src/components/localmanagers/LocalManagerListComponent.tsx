@@ -1,22 +1,31 @@
-
-import {Link} from "react-router-dom";
+import {useState} from "react";
+import LocalManagerMappingModalComponent from "./LocalManagerMappingModalComponent.tsx";
 
 function LocalManagerListComponent() {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpen = () => {
+        setIsModalOpen(true);
+    }
+
     return (
         <div className="py-8">
             <div className="flex justify-end">
-                <Link to='/localManagers/register'>
-                    <div className="flex items-center space-x-4">
-                        <button
-                            className="relative inline-block px-3 py-1 font-semibold text-txt-grey leading-tight transition ease-in-out duration-200 focus:outline-none"
-                        >
-                                            <span aria-hidden
-                                                  className="absolute inset-0 bg-txt-cyan opacity-50 rounded-full"/>
-                            <span className="relative">추가</span>
-                        </button>
-                    </div>
-                </Link>
+                <div className="flex items-center space-x-4">
+                    <button
+                        className="relative inline-block px-6 py-2 font-semibold text-white bg-blue-500 rounded-md shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl focus:outline-none"
+                        onClick={handleOpen}
+                    >
+                        <span className="absolute inset-0 bg-blue-400 opacity-20 rounded-md" />
+                        <span className="relative">추가</span>
+                    </button>
+                </div>
             </div>
+
+    {isModalOpen && (
+                <LocalManagerMappingModalComponent/>
+            )}
 
 
             <div className="my-2 flex sm:flex-row flex-col">

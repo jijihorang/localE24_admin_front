@@ -33,7 +33,7 @@ function Depth1Menu({mainName,subMenus,basicPath,iconName}:Depth1MenuProps) {
                 onClick={isToggleOpen}
                 className="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-neutral-800"
             >
-                <img src={iconPath} alt="Arrow Icon" className="w-4 h-4"/>
+                <img src={iconPath} alt="Arrow Icon" className="w-5 h-5"/>
                 <span className="inline-flex items-center">
                     <span className="ml-4 text-blue-950">{mainName}</span>
                 </span>

@@ -60,7 +60,7 @@ function AsideMenuComponent() {
 
                 {/* 로고 부분 */}
                 <Link to="/main" className="flex items-center justify-center mb-4 p-2">
-                       <img src={logo} alt='/logo' className='px-14'/>
+                       <img src={logo} alt='/logo' className='px-16'/>
                 </Link>
 
                 {/* 1Depth 메뉴 */}
