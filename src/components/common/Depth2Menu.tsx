@@ -1,16 +1,21 @@
 import {Link} from "react-router-dom";
-import React from "react";
 
-function Depth2Menu({subMenus, basicPath}) {
+// 타입에러 처리 - props 객체 기본 타입 지정
+interface Depth2MenuProps {
+    subMenus:[{name:string,toPath:string}],
+    basicPath:string,
+}
+
+function Depth2Menu({subMenus, basicPath}:Depth2MenuProps) {
     const menuLis = subMenus.map( (menuName,idx) => {
 
         const fullPath = basicPath + menuName.toPath
         return (
             <li
-                className="px-2 py-1 transition-colors duration-150 hover:text-txt-grey rounded"
+                className="px-2 py-1 transition-colors duration-150 rounded"
                 key={idx}
             >
-                <Link className="w-full block" to={fullPath}>{menuName.name}</Link>
+                <Link className="w-full block text-blue-950" to={fullPath}>{menuName.name}</Link>
             </li>
         )
     })

@@ -1,11 +1,11 @@
 {
-  "name": "oz_admin_front",
+  "name": "localE24_admin_front",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
