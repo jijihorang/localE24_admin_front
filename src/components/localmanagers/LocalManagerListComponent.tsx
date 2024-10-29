@@ -18,7 +18,7 @@ function LocalManagerListComponent() {
                         onClick={handleOpen}
                     >
                         <span className="absolute inset-0 bg-blue-400 opacity-20 rounded-md" />
-                        <span className="relative">추가</span>
+                        <span className="relative">매칭</span>
                     </button>
                 </div>
             </div>

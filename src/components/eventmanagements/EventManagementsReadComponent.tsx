@@ -61,15 +61,6 @@ function EventManagementsReadComponent() {
                         />
                     </div>
                 </div>
-
-                <div className="flex gap-4 justify-center">
-                    <button className="flex-1 max-w-xs px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
-                        승인
-                    </button>
-                    <button className="flex-1 max-w-xs px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
-                        거절
-                    </button>
-                </div>
             </div>
         </div>
     );
