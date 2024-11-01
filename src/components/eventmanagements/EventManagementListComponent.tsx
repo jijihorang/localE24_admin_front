@@ -20,6 +20,9 @@ function EventManagementListComponent() {
                                 지점명
                             </th>
                             <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                                공간대여
+                            </th>
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                                 Status
                             </th>
                         </tr>
@@ -34,6 +37,9 @@ function EventManagementListComponent() {
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부산 서면점</p>
+                            </td>
+                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">O</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <div className="flex items-center space-x-4">
