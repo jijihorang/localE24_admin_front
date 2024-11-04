@@ -7,10 +7,14 @@ const ChevronDown = () => (
     </svg>
 );
 
+interface subMenusProps{
+    name: string,
+    toPath:string
+}
 // 타입에러 처리 - props 객체 기본 타입 지정
 interface Depth1MenuProps {
     mainName:string,
-    subMenus:[{name:string,toPath:string}],
+    subMenus:subMenusProps[],
     basicPath:string,
     iconName:string
 }

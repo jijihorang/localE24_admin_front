@@ -3,9 +3,14 @@ import Depth1Menu from "./Depth1Menu.tsx";
 
 import logo from "../../assets/img/logo.png"
 
+interface subMenusProps{
+    name: string,
+    toPath:string
+}
+
 interface Depth1MenuProps {
     mainName:string,
-    subMenus:[{name:string,toPath:string}],
+    subMenus:subMenusProps[],
     basicPath:string,
     iconName:string
 }
@@ -14,7 +19,7 @@ function AsideMenuComponent() {
 
     const m1:Depth1MenuProps = {
         mainName:"지역 담당자 관리",
-        subMenus:[{name:"지역 담당자 리스트",toPath:"/list"}],
+        subMenus:[{name:"지역 담당자 리스트",toPath:"/list"},{name:"지역 담당자 리스트",toPath:"/list"}],
         basicPath:"/localManagers",
         iconName: "users.png"
     }
