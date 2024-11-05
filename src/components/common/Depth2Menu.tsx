@@ -1,8 +1,13 @@
 import {Link} from "react-router-dom";
 
+
+interface subMenusProps{
+    name: string,
+    toPath:string
+}
 // 타입에러 처리 - props 객체 기본 타입 지정
 interface Depth2MenuProps {
-    subMenus:[{name:string,toPath:string}],
+    subMenus:subMenusProps[],
     basicPath:string,
 }
 
