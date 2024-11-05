@@ -19,16 +19,6 @@ function EventLocationsReadComponent() {
                 />
 
                 <div>
-                    <label className="text-sm font-medium text-gray-700">점주명</label>
-                    <input
-                        type="text"
-                        value="김민재"
-                        readOnly
-                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    />
-                </div>
-
-                <div>
                     <label className="text-sm font-medium text-gray-700">지점명</label>
                     <input
                         type="text"
@@ -38,13 +28,24 @@ function EventLocationsReadComponent() {
                     />
                 </div>
 
-                <div className="flex gap-4 justify-center">
-                    <button className="flex-1 max-w-xs px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
-                        승인
-                    </button>
-                    <button className="flex-1 max-w-xs px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
-                        거절
-                    </button>
+                <div>
+                    <label className="text-sm font-medium text-gray-700">지역 담당자</label>
+                    <input
+                        type="text"
+                        value="김민재 담당자"
+                        readOnly
+                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                </div>
+
+                <div>
+                    <label className="text-sm font-medium text-gray-700">공간 대여 가능 여부</label>
+                    <input
+                        type="text"
+                        value="가능 / 불가능"
+                        readOnly
+                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
                 </div>
             </div>
         </div>
