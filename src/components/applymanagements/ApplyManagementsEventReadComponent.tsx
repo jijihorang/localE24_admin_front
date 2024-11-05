@@ -1,8 +1,7 @@
 import back from "../../assets/img/icons/back.png";
 
 
-function EventManagementsReadComponent() {
-
+function ApplyManagementsEventReadComponent() {
     return (
         <div className="pt-20 pb-10 max-w-lg mx-auto">
             <div className="border rounded-2xl p-10 bg-white shadow-md space-y-8">
@@ -92,9 +91,17 @@ function EventManagementsReadComponent() {
                     </div>
                 </div>
 
+                <div className="flex gap-4 justify-center">
+                    <button className="flex-1 max-w-xs px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                        승인
+                    </button>
+                    <button className="flex-1 max-w-xs px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+                        거절
+                    </button>
+                </div>
             </div>
         </div>
     );
 }
 
-export default EventManagementsReadComponent;
+export default ApplyManagementsEventReadComponent;
