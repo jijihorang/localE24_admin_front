@@ -40,17 +40,26 @@ function ApplyManagementsEventListComponent() {
                         <tbody>
                         <tr>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <Link to="/eventLocations/read"
-                                      className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부산 서면점</Link>
+                                <Link to="/applymanagements/event/read"
+                                      className="text-gray-900 whitespace-no-wrap dark:text-gray-300">부기와 함께하는 부산</Link>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-23</p>
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">홍길동</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-25</p>
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">해운대점</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">불가능</p>
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">3</p>
+                            </td>
+                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">가능</p>
+                            </td>
+                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-15</p>
+                            </td>
+                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-15</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <div className="flex items-center space-x-4">

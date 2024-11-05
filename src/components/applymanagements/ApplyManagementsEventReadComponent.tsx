@@ -22,7 +22,7 @@ function ApplyManagementsEventReadComponent() {
                     <span></span><span></span>
                     <input
                         type="text"
-                        value="민파라다이스"
+                        value="홍길동"
                         readOnly
                         className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
@@ -33,6 +33,15 @@ function ApplyManagementsEventReadComponent() {
                     <input
                         type="text"
                         value="부산 서면점"
+                        readOnly
+                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                </div>
+                <div>
+                    <label className="text-sm font-medium text-gray-700">공간대여 가능 여부</label>
+                    <input
+                        type="text"
+                        value="가능"
                         readOnly
                         className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
@@ -55,6 +64,40 @@ function ApplyManagementsEventReadComponent() {
                             className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                         />
                     </div>
+                </div>
+
+                <div>
+                    <label className="text-sm font-medium text-gray-700">신청 날짜</label>
+                    <input
+                        type="text"
+                        value="2024-10-25"
+                        readOnly
+                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    />
+                </div>
+                <div>
+                    <span>상품 리스트</span>
+                    <div>
+                        <label className="text-sm font-medium text-gray-700">상품명1</label>
+                        <img src="" alt=""/>
+                    </div>
+                    <div>
+                        <label className="text-sm font-medium text-gray-700">상품명2</label>
+                        <img src="" alt=""/>
+                    </div>
+                    <div>
+                        <label className="text-sm font-medium text-gray-700">상품명3</label>
+                        <img src="" alt=""/>
+                    </div>
+                </div>
+
+                <div className="flex gap-4 justify-center">
+                    <button className="flex-1 max-w-xs px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                        승인
+                    </button>
+                    <button className="flex-1 max-w-xs px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600">
+                        거절
+                    </button>
                 </div>
             </div>
         </div>

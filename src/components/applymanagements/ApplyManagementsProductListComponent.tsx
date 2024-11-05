@@ -34,7 +34,7 @@ function ApplyManagementsProductListComponent() {
                         <tbody>
                         <tr>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <Link to="/eventLocations/read"
+                                <Link to="/applymanagements/product/read"
                                       className="text-gray-900 whitespace-no-wrap dark:text-gray-300">마이 멜로디 키링</Link>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
