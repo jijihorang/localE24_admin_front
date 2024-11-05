@@ -18,6 +18,7 @@ function AppliersReadComponent() {
                     onClick={handleBack}
                 />
 
+
                 <div>
                     <label htmlFor="creatorName" className="text-sm font-medium text-gray-700">제작자명</label>
                     <input
