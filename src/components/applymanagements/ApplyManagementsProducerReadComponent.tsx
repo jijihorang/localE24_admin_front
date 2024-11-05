@@ -75,14 +75,9 @@ function ApplyManagementsProducerReadComponent() {
                     </div>
                 </div>
                 <div>
-                    <label className="text-sm font-medium text-gray-700">이메일</label>
+                    <label className="text-sm font-medium text-gray-700">포트폴리오</label>
                     <div className="flex space-x-2 mt-1">
-                        <input
-                            type="text"
-                            value="aaa@aaa.com"
-                            readOnly
-                            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        />
+                        <img src="" alt=""/>
                     </div>
                 </div>
             </div>

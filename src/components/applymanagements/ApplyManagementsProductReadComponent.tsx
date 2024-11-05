@@ -8,52 +8,48 @@ function ApplyManagementsProductReadComponent() {
                 <img src={back} alt="뒤로 가기" className="w-6 h-6 cursor-pointer"/>
 
                 <div>
-                    <label className="text-sm font-medium text-gray-700">이벤트명</label>
+                    <label className="text-sm font-medium text-gray-700">품번</label>
                     <input
                         type="text"
-                        value="부기와 함께하는 부산"
+                        value="A10B2312"
                         readOnly
                         className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
                 </div>
 
                 <div>
-                    <label className="text-sm font-medium text-gray-700">제작자</label>
+                    <label className="text-sm font-medium text-gray-700">상품명</label>
                     <input
                         type="text"
-                        value="민파라다이스"
+                        value="마이 멜로디"
                         readOnly
                         className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
                 </div>
 
                 <div>
-                    <label className="text-sm font-medium text-gray-700">담당 지점</label>
+                    <label className="text-sm font-medium text-gray-700">카테고리</label>
                     <input
                         type="text"
-                        value="부산 서면점"
+                        value="액세서리"
                         readOnly
                         className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                     />
                 </div>
 
                 <div>
-                    <label className="text-sm font-medium text-gray-700">진행기간</label>
+                    <label className="text-sm font-medium text-gray-700">사진</label>
                     <div className="flex space-x-2 mt-1">
-                        <input
-                            type="text"
-                            value="2024-10-24"
-                            readOnly
-                            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        />
-                        <span className="flex items-center">-</span>
-                        <input
-                            type="text"
-                            value="2024-11-24"
-                            readOnly
-                            className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        />
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
                     </div>
+                </div>
+
+                <div>
+                    <label className="text-sm font-medium text-gray-700">설명</label>
+                    <textarea name="" id="">
+                        test description
+                    </textarea>
                 </div>
             </div>
         </div>
