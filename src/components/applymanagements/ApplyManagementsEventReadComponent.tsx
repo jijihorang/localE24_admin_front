@@ -19,6 +19,7 @@ function ApplyManagementsEventReadComponent() {
 
                 <div>
                     <label className="text-sm font-medium text-gray-700">제작자</label>
+                    <span></span><span></span>
                     <input
                         type="text"
                         value="민파라다이스"
