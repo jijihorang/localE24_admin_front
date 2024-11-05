@@ -13,21 +13,29 @@ function AppliersListComponent() {
                             <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                                 입점 신청인
                             </th>
-                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 upperca se tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                                 신청 날짜
+                            </th>
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 upperca se tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                                승인 날짜
                             </th>
                             <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
                                 Status
                             </th>
                         </tr>
                         </thead>
+
                         <tbody>
                         <tr>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <Link to="/appliers/read" className="text-gray-900 whitespace-no-wrap dark:text-gray-300">민파라다이스</Link>
+                                <Link to="/appliers/read"
+                                      className="text-gray-900 whitespace-no-wrap dark:text-gray-300">민파라다이스</Link>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-22</p>
+                            </td>
+                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-23</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <div className="flex items-center space-x-4">
