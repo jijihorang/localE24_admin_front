@@ -29,7 +29,7 @@ const applymanagementsRouter ={
             element: <Suspense fallback={Loading}><ApplyManagementsEventListPage/></Suspense>
         },
         {
-            path: "event/read/:id",
+            path: "event/read",
             element: <Suspense fallback={Loading}><ApplyManagementsEventReadPage/></Suspense>
         },
         {
@@ -37,7 +37,7 @@ const applymanagementsRouter ={
             element: <Suspense fallback={Loading}><ApplyManagementsProductListPage/></Suspense>
         },
         {
-            path: "product/read/:id",
+            path: "product/read",
             element: <Suspense fallback={Loading}><ApplyManagementsProductReadPage/></Suspense>
         },
         {
@@ -45,7 +45,7 @@ const applymanagementsRouter ={
             element: <Suspense fallback={Loading}><ApplyManagementsProducerListPage/></Suspense>
         },
         {
-            path: "producer/read/:id",
+            path: "producer/read",
             element: <Suspense fallback={Loading}><ApplyManagementsProducerReadPage/></Suspense>
         },
         {
@@ -53,7 +53,7 @@ const applymanagementsRouter ={
             element: <Suspense fallback={Loading}><ApplyManagementsStoreListPage/></Suspense>
         },
         {
-            path: "store/read/:id",
+            path: "store/read",
             element: <Suspense fallback={Loading}><ApplyManagementsStoreReadPage/></Suspense>
         }
 
