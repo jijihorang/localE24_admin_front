@@ -4,9 +4,9 @@ import LoadingPage from "../pages/LoadingPage.tsx";
 
 const Loading = <LoadingPage></LoadingPage>
 
-const EventManagementIndex = lazy(() => import("../pages/eventmanagements/EventManagementIndex.tsx"))
-const EventManagementListPage = lazy(() => import("../pages/eventmanagements/EventManagementListPage.tsx"))
-const EventManagementReadPage = lazy(() => import("../pages/eventmanagements/EventManagementReadPage.tsx"))
+const EventManagementIndex = lazy(() => import("../pages/eventmanagements/EventManagementIndex"))
+const EventManagementListPage = lazy(() => import("../pages/eventmanagements/EventManagementListPage"))
+const EventManagementReadPage = lazy(() => import("../pages/eventmanagements/EventManagementReadPage"))
 
 const eventManagementsRouter = {
     path: "/eventManagements",

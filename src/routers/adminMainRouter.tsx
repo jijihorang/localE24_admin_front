@@ -4,6 +4,7 @@ import localManagersRouter from "./localManagersRouter.tsx";
 import eventManagementsRouter from "./eventManagementsRouter.tsx";
 import appliersRouter from "./appliersRouter.tsx";
 import eventLocationsRouter from "./eventLocationsRouter.tsx";
+import applymanagementsRouter from "./applymanagementsRouter.tsx";
 
 const LoadingPage = lazy(() => import("../pages/LoadingPage.tsx"))
 
@@ -29,7 +30,8 @@ const adminMainRouter = createBrowserRouter([
     localManagersRouter,
     eventManagementsRouter,
     appliersRouter,
-    eventLocationsRouter
+    eventLocationsRouter,
+    applymanagementsRouter
 
 ])
 

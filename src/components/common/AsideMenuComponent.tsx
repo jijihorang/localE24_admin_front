@@ -48,11 +48,7 @@ function AsideMenuComponent() {
     const m4:Depth1MenuProps = {
         mainName:"이벤트 관리",
         subMenus:[
-            {name:"이벤트 리스트",toPath:"/list"},
-            {name:"이벤트 신청 리스트",toPath:"/list"},
-            {name:"제작자 신청 리스트",toPath:"/list"},
-            {name:"상품 신청 리스트",toPath:""},
-            {name:"지점 신청 리스트",toPath:"/list"}
+            {name:"이벤트 리스트",toPath:"/list"}
         ],
         basicPath:"/eventManagements",
         iconName: "calendar.png"
@@ -82,6 +78,18 @@ function AsideMenuComponent() {
         iconName: "product.png"
     }
 
+    const m8:Depth1MenuProps = {
+        mainName:"이벤트 신청 관리",
+        subMenus:[
+            {name:"이벤트 신청 리스트",toPath:"/event/list"},
+            {name:"제작자 신청 리스트",toPath:"/producer/list"},
+            {name:"상품 신청 리스트",toPath:"/product/list"},
+            {name:"지점 신청 리스트",toPath:"/store/list"}
+        ],
+        basicPath:"/applymanagements",
+        iconName: "product.png"
+    }
+
     return (
         <aside className="z-20 hidden w-64 overflow-y-auto bg-side-navy md:block flex-shrink-0">
             <div className="py-4 text-neutral-800">
@@ -98,6 +106,7 @@ function AsideMenuComponent() {
                     <Depth1Menu {...m3} ></Depth1Menu>
                     <Depth1Menu {...m7} ></Depth1Menu>
                     <Depth1Menu {...m4} ></Depth1Menu>
+                    <Depth1Menu {...m8} ></Depth1Menu>
                     <Depth1Menu {...m5} ></Depth1Menu>
                     <Depth1Menu {...m6} ></Depth1Menu>
                 </ul>
