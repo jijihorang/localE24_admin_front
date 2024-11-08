@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-function AppliersListComponent() {
+function ProductListComponent() {
     return (
         <div className="py-8">
             <div className="my-2 flex sm:flex-row flex-col">
@@ -9,33 +9,32 @@ function AppliersListComponent() {
                 <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
                     <table className="min-w-full leading-normal">
                         <thead>
-                            <tr>
-                                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                    사업자 번호
-                                </th>
-                                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                    제작자명
-                                </th>
-                                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 upperca se tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                    등록 날짜
-                                </th>
-                                <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
-                                    Status
-                                </th>
-                            </tr>
+                        <tr>
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                                상품코드
+                            </th>
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                                카테고리
+                            </th>
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                                상품명
+                            </th>
+                            <th className="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">
+                                Status
+                            </th>
+                        </tr>
                         </thead>
-
                         <tbody>
                         <tr>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">102-34-36789</p>
+                                <Link to="/product/read"
+                                      className="text-gray-900 whitespace-no-wrap dark:text-gray-300">01234</Link>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <Link to="/appliers/read"
-                                      className="text-gray-900 whitespace-no-wrap dark:text-gray-300">김민주</Link>
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">키링</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
-                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">2024-10-22</p>
+                                <p className="text-gray-900 whitespace-no-wrap dark:text-gray-300">하트 부기</p>
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm dark:bg-gray-800 dark:border-gray-700">
                                 <div className="flex items-center space-x-4">
@@ -57,4 +56,4 @@ function AppliersListComponent() {
     );
 }
 
-export default AppliersListComponent;
+export default ProductListComponent;

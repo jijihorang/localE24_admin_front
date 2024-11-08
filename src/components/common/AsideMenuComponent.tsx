@@ -73,7 +73,7 @@ function AsideMenuComponent() {
             {name:"상품 리스트",toPath:""}
 
         ],
-        basicPath:"/",
+        basicPath:"/product",
         iconName: "product.png"
     }
 
