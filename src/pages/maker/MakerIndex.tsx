@@ -1,7 +1,7 @@
 import BasicLayout from "../../layouts/MainLayout.tsx";
 import {Outlet} from "react-router-dom";
 
-function AppliersIndex() {
+function MakerIndex() {
     return (
         <BasicLayout>
             <div>
@@ -11,4 +11,4 @@ function AppliersIndex() {
     );
 }
 
-export default AppliersIndex;
+export default MakerIndex;

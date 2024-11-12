@@ -31,7 +31,7 @@ function AsideMenuComponent() {
         subMenus:[
             {name:"제작자 리스트",toPath:""}
         ],
-        basicPath:"/appliers",
+        basicPath:"/maker",
         iconName: "edit.png"
     }
 
