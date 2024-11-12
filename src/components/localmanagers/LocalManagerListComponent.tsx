@@ -1,12 +1,12 @@
 import {useSearchParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {IPageResponse} from "../../types/IPageresponse.ts";
 import {deleteLocalManager, getLocalManagerList} from "../../apis/testLocalManagerAPI.ts";
-import {ILocalManager} from "../../types/ILocalManager.ts";
+import {Ilocalmanager} from "../../types/ilocalmanager.ts";
 import PageComponent from "../common/PageComponent.tsx";
 import LoadingComponent from "../common/LoadingComponent.tsx";
+import {IPageresponse} from "../../types/ipageresponse.ts";
 
-const initialState = {
+const initialState: IPageresponse<Ilocalmanager> = {
     dtoList: [],
     pageNumList: [],
     pageRequestDTO: { page: 1, size: 10 },
@@ -29,7 +29,7 @@ function LocalManagerListComponent() {
     const [result, setResult] = useState<string>('')
 
     const [loading, setLoading] = useState<boolean>(false)
-    const [pageResponse, setPageResponse] = useState<IPageResponse>(initialState)
+    const [pageResponse, setPageResponse] = useState<IPageresponse<Ilocalmanager>>(initialState)
 
 
     useEffect (() => {
@@ -43,7 +43,7 @@ function LocalManagerListComponent() {
     }, [page, size])
 
 
-    const ListLI = Array.isArray(pageResponse.dtoList) && pageResponse.dtoList.length > 0 ? pageResponse.dtoList.map((localManager:ILocalManager) => {
+    const ListLI = Array.isArray(pageResponse.dtoList) && pageResponse.dtoList.length > 0 ? pageResponse.dtoList.map((localManager:Ilocalmanager) => {
         const {managerNo, areaName, managerName, managerContact} = localManager
 
             const handleClickDelete = () => {

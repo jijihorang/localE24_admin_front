@@ -1,10 +1,10 @@
 import {ReactElement} from "react";
 import {useSearchParams} from "react-router-dom";
-import {IPageResponse} from "../../types/IPageresponse.ts";
+import {IPageresponse} from "../../types/ipageresponse.ts";
 
 
-interface Props {
-    pageResponse:IPageResponse
+interface Props<E> {
+    pageResponse:IPageresponse<E>
 }
 
 const makeArr = (from:number, to:number): number[] => {
@@ -17,7 +17,7 @@ const makeArr = (from:number, to:number): number[] => {
     return arr
 }
 
-function PageComponent({pageResponse}: Props): ReactElement {
+function PageComponent<E>({pageResponse}: Props<E>): ReactElement {
 
     const current: number = pageResponse.current
     const tempLast: number = Math.ceil(current / 10.0) * 10

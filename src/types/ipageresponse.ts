@@ -1,7 +1,6 @@
-import {ILocalManager} from "./ILocalManager.ts";
 
-export interface IPageResponse {
-    dtoList: ILocalManager[];
+export interface IPageresponse<E> {
+    dtoList: E[];
     pageNumList: number[];
     pageRequestDTO: {
         page: number;

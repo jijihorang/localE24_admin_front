@@ -1,4 +1,4 @@
-export interface ILocalManager{
+export interface Ilocalmanager {
     managerNo: number;
     areaName: string;
     managerName: string;
