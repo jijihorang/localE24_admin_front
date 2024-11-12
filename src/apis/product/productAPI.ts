@@ -4,7 +4,7 @@ import {IProduct} from "../../types/product/product.ts";
 
 const host = 'http://localhost:8080/api/product';
 
-export const getProductList = async (page?:number, size?:number): Promise<IPageResponse> => {
+export const getProductList = async (page?:number, size?:number): Promise<IPageResponse<IProduct>> => {
 
     const pageValue:number = page || 1
     const sizeValue:number = size || 10

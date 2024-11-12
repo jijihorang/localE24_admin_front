@@ -5,7 +5,7 @@ import {IMaker} from "../../types/maker/maker.ts";
 const host = 'http://localhost:8080/api/maker';
 
 // 제작자 리스트
-export const getMakerList = async ( page?:number, size?:number ):Promise<IPageResponse> => {
+export const getMakerList = async ( page?:number, size?:number ):Promise<IPageResponse<IMaker>> => {
 
     const pageValue:number = page || 1
     const sizeValue:number = size || 10
