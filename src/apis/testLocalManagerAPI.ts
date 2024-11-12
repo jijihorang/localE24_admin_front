@@ -1,10 +1,11 @@
-import {IPageResponse} from "../types/IPageresponse.ts";
+import {IPageresponse} from "../types/ipageresponse.ts";
 import  axios from "axios";
+import {Ilocalmanager} from "../types/ilocalmanager.ts";
 
 
-const host = 'http://localhost:8080/api/localmanager'
+const host = 'http://10.10.10.31:8085/api/localmanager'
 
-export const getLocalManagerList = async (page?:number, size?:number): Promise<IPageResponse> => {
+export const getLocalManagerList = async (page?:number, size?:number): Promise<IPageresponse<Ilocalmanager>> => {
     const pageValue:number = page || 1
     const sizeValue:number = size || 10
 
