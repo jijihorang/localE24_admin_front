@@ -10,8 +10,8 @@ const ApplyManagementsEventListPage = lazy(() => import("../pages/applymanagemen
 const ApplyManagementsEventReadPage = lazy(() => import("../pages/applymanagements/ApplyManagementsEventReadPage.tsx"));
 const ApplyManagementsProductListPage = lazy(() => import("../pages/applymanagements/ApplyManagementsProductListPage"));
 const ApplyManagementsProductReadPage = lazy(() => import("../pages/applymanagements/ApplyManagementsProductReadPage"));
-const ApplyManagementsProducerListPage = lazy(() => import("../pages/applymanagements/ApplyManagementsProducerListPage"));
-const ApplyManagementsProducerReadPage = lazy(() => import("../pages/applymanagements/ApplyManagementsProducerReadPage"));
+const ApplyManagementsProducerListPage = lazy(() => import("../pages/applymanagements/ApplyManagementsMakerListPage.tsx"));
+const ApplyManagementsProducerReadPage = lazy(() => import("../pages/applymanagements/ApplyManagementsMakerReadPage.tsx"));
 const ApplyManagementsStoreListPage = lazy(() => import("../pages/applymanagements/ApplyManagementsStoreListPage"));
 const ApplyManagementsStoreReadPage = lazy(() => import("../pages/applymanagements/ApplyManagementsStoreReadPage"));
 

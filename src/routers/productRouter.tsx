@@ -21,7 +21,7 @@ const productRouter = {
             element: <Suspense fallback={Loading}><ProductistPage /></Suspense>
         },
         {
-            path: "read",
+            path: "read/:productNo",
             element: <Suspense fallback={Loading}><ProductReadPage /></Suspense>
         }
     ]
