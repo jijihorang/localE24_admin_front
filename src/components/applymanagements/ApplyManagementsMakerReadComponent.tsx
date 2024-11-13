@@ -1,7 +1,7 @@
 import {IMaker} from "../../types/maker/maker.ts";
 import {useLocation, useNavigate, useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
-import {getMakerOne, updateMakerStatus} from "../../apis/maker/makerAPI.ts";
+import {getApplyMakerOne, updateMakerStatus} from "../../apis/applymanagements/maker/applymanagementmakerAPI.ts";
 import LoadingComponent from "../common/LoadingComponent.tsx";
 import back from "../../assets/img/icons/back.png";
 
@@ -31,7 +31,7 @@ function ApplyManagementsMakerReadComponent() {
 
     const handleBack = () => {
         navigate({
-            pathname: `/maker/list`,
+            pathname: `/applyManagements/maker/list`,
             search:`${queryString}`
         })
     };
@@ -41,7 +41,7 @@ function ApplyManagementsMakerReadComponent() {
         setLoading(true);
         try {
             await updateMakerStatus(makerBizNo, status);
-            navigate(`/maker/list`);
+            navigate(`/applyManagements/maker/list`);
         } catch (error) {
             console.error("에러 발생하였습니다.", error);
         } finally {
@@ -50,9 +50,9 @@ function ApplyManagementsMakerReadComponent() {
     };
 
     useEffect(() => {
-        const bizNoNum = String(makerBizNo);
+        const biNum = String(makerBizNo);
         setLoading(true);
-        getMakerOne(bizNoNum).then(res => {
+        getApplyMakerOne(biNum).then(res  => {
             setMaker(res);
             setLoading(false);
         });

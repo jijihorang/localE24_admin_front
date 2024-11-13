@@ -1,10 +1,10 @@
 import {createSearchParams, useNavigate, useSearchParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {IPageResponse} from "../../types/ipageresponse.ts";
-import {getMakerList} from "../../apis/maker/makerAPI.ts";
 import {IMaker} from "../../types/maker/maker.ts";
 import LoadingComponent from "../common/LoadingComponent.tsx";
 import PageComponent from "../common/PageComponent.tsx";
+import {getApplyMakerList} from "../../apis/applymanagements/maker/applymanagementmakerAPI.ts";
 
 const initialState : IPageResponse<IMaker> = {
     dtoList: [],
@@ -41,14 +41,14 @@ function ApplyManagementsMakerListComponent() {
 
     const moveToRead = (makerBizNo: string | undefined) => {
         navigate({
-            pathname: `/maker/read/${makerBizNo}`,
+            pathname: `/applyManagements/maker/read/${makerBizNo}`,
             search:`${queryStr}`
         })
     }
 
     useEffect(() => {
         setLoading(true)
-        getMakerList(page, size).then(data => {
+        getApplyMakerList(page, size).then(data => {
             setPageResponse(data)
 
             setTimeout(() => {

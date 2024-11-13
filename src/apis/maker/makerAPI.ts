@@ -22,11 +22,3 @@ export const getMakerOne = async (makerBizNo : string): Promise<IMaker> => {
 
     return res.data;
 }
-
-// 제작자 상태 변경
-export const updateMakerStatus = async (makerBizNo: string, makerStatus:number): Promise<void> => {
-    await axios.put(`${host}/modify`, {
-        makerBizNo,
-        makerStatus,
-    });
-}
