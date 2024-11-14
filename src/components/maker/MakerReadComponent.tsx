@@ -13,7 +13,6 @@ const initialState: IMaker = {
     makerPostnum: "",
     makerAddr: "",
     makerAddrDetail: "",
-    makerStatus: 0,
     attachFileNames: []
 }
 
@@ -46,8 +45,8 @@ function MakerReadComponent() {
     }, [makerBizNo]);
 
     return (
-        <div className="pt-20 pb-10 max-w-lg mx-auto">
-            {loading && <LoadingComponent />}
+        <div className="pt-10 pb-10 max-w-screen-xl mx-auto">
+            {loading && <LoadingComponent/>}
 
             <div className="border rounded-2xl p-10 bg-white shadow-md space-y-6">
                 <img
@@ -58,79 +57,47 @@ function MakerReadComponent() {
                 />
 
                 <div>
-                    <label htmlFor="creatorName" className="text-sm font-medium text-gray-700">제작자명</label>
-                    <input
-                        type="text"
-                        readOnly
-                        value={maker.makerName}
-                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    />
+                    <label className="text-sm font-medium text-gray-700">제작자명</label>
+                    <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerName}</div>
                 </div>
 
                 <div>
-                    <label htmlFor="businessNumber" className="text-sm font-medium text-gray-700">사업자 등록번호</label>
-                    <input
-                        type="text"
-                        value={maker.makerBizNo}
-                        readOnly
-                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    />
+                    <label className="text-sm font-medium text-gray-700">사업자 등록번호</label>
+                    <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerBizNo}</div>
                 </div>
 
-                <div className="border p-4 rounded-md">
-                    <label className="text-sm font-medium text-gray-700">사업장 주소</label>
-                    <div>
-                        <label htmlFor="postalCode" className="text-sm font-medium text-gray-700">우편번호</label>
-                        <input
-                            type="text"
-                            value={maker.makerPostnum}
-                            readOnly
-                            className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        />
-                    </div>
-                    <div className="mt-2">
-                        <label htmlFor="address" className="text-sm font-medium text-gray-700">주소</label>
-                        <input
-                            type="text"
-                            value={maker.makerAddr}
-                            readOnly
-                            className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        />
-                    </div>
-                    <div className="mt-2">
-                        <label htmlFor="detailedAddress" className="text-sm font-medium text-gray-700">상세주소</label>
-                        <input
-                            type="text"
-                            value={maker.makerAddrDetail}
-                            readOnly
-                            className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                        />
+                <div>
+                    <label className="text-sm font-medium text-gray-700 pb-6">사업장 주소</label>
+                    <div className="border p-4 rounded-md">
+                        <div>
+                            <label className="text-sm font-medium text-gray-700">우편번호</label>
+                            <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerPostnum}</div>
+                        </div>
+                        <div className="mt-2">
+                            <label className="text-sm font-medium text-gray-700">주소</label>
+                            <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerAddr}</div>
+                        </div>
+                        <div className="mt-2">
+                            <label className="text-sm font-medium text-gray-700">상세주소</label>
+                            <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerAddrDetail}</div>
+                        </div>
                     </div>
                 </div>
 
+
                 <div>
-                    <label htmlFor="phone" className="text-sm font-medium text-gray-700">휴대전화</label>
-                    <input
-                        type="text"
-                        value={maker.makerPhone}
-                        readOnly
-                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    />
+                    <label className="text-sm font-medium text-gray-700">휴대전화</label>
+                    <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerPhone}</div>
                 </div>
 
                 <div>
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">이메일</label>
-                    <input
-                        type="email"
-                        value={maker.makerEmail}
-                        readOnly
-                        className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    />
+                    <label className="text-sm font-medium text-gray-700">이메일</label>
+                    <div className="mt-1 w-full px-3 py-2 border rounded-md">{maker.makerEmail}</div>
                 </div>
 
                 <div>
-                    <label htmlFor="portfolio" className="text-sm font-medium text-gray-700">포트폴리오 파일</label>
-                    <div className="mt-1 w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <label className="text-sm font-medium text-gray-700">포트폴리오 파일</label>
+                    <div className="mt-1 w-full px-3 py-2 border rounded-md">
                         {maker.attachFileNames && maker.attachFileNames.length > 0 ? (
                             maker.attachFileNames.map((fileName, index) => (
                                 <p key={index}>{fileName}</p>
@@ -140,7 +107,6 @@ function MakerReadComponent() {
                         )}
                     </div>
                 </div>
-
             </div>
         </div>
     );
