@@ -37,7 +37,7 @@ const applymanagementsRouter ={
             element: <Suspense fallback={Loading}><ApplyManagementsProductListPage/></Suspense>
         },
         {
-            path: "product/read",
+            path: "product/read/:productNo",
             element: <Suspense fallback={Loading}><ApplyManagementsProductReadPage/></Suspense>
         },
         {
