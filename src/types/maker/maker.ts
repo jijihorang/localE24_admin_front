@@ -8,7 +8,7 @@ export interface IMaker {
     makerAddr?: string;
     makerAddrDetail?: string;
 
-    makerStatus?: number;
+    makerStatus?: string;
 
     attachFileNames?: string[];
 
