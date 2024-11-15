@@ -17,4 +17,7 @@ export interface IMaker {
     modDate?: Date;
 
     creator?: string;
+
+    startDate ?: Date;
+    endDate ?: Date;
 }

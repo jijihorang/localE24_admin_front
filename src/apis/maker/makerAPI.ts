@@ -22,3 +22,13 @@ export const getMakerOne = async (makerBizNo : string): Promise<IMaker> => {
 
     return res.data;
 }
+
+// 제작자 검색
+export const searchMakerList = async (page?:number, size?:number, makerName ?: string, startDate ?: string, endDate ?: string) : Promise<IPageResponse<IMaker>> => {
+
+    const params = {page: String(page), size: String(size), makerName, startDate, endDate}
+
+    const res = await axios.get(`${host}/search`, {params})
+    return res.data;
+}
+
